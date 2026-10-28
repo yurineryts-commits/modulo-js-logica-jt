@@ -49,21 +49,24 @@ const media6=2;
 // }
 
 const medias=[media,media2, media3, media4,media5,media6]
-const nomes=["Ana", "Bruna","Carla" ,"Diego","Elisa", "Fabio"]
+let soma=0;
+let aprovados=0;
+
+// const nomes=["Ana", "Bruna","Carla" ,"Diego","Elisa", "Fabio"]
 
 for (let i = 0; i < medias.length; i++) {
+    
+    soma = soma+ medias[i]
    
     if(medias[i]>= 7){
 
-        console.log("Aluno:"+nomes[i]+ " Aprovado")
+       aprovados++
 
     }
 
-    else{
-
-        console.log("Aluno:"+nomes[i]+ " Reprovado")
-    }
 };
+console.log("Aprovados" , aprovados);
+console.log("Média da turma: " + (soma/medias.length).toFixed(2));
 
 
 
