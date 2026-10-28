@@ -48,20 +48,25 @@ const media6=2;
 //     console.log("Reprovado")
 // }
 
-// if(media6>=7){
-//     console.log("Aprovado")
-// }
-// else{
-//     console.log("Reprovado")
-// }
-
-
-
 const medias=[media,media2, media3, media4,media5,media6]
 const nomes=["Ana", "Bruna","Carla" ,"Diego","Elisa", "Fabio"]
 
+for (let i = 0; i < medias.length; i++) {
+   
+    if(medias[i]>= 7){
 
-console.log(nomes[0],medias[0]);
+        console.log("Aluno:"+nomes[i]+ " Aprovado")
+
+    }
+
+    else{
+
+        console.log("Aluno:"+nomes[i]+ " Reprovado")
+    }
+};
+
+
+
 
 
 
