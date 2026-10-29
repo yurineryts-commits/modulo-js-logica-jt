@@ -4,7 +4,7 @@ const prompt=require("prompt-sync")();
 let N1= Number(prompt("Digite o primeiro número:"));
 let N2= Number(prompt("Digite o segundo número:"));
 let N3= Number(prompt("Digite o terceiro número:"));
-// let numeros=[ N1,N2,N3];
+
 
 if (N1>N2 && N1>N3) {
 
