@@ -1,18 +1,19 @@
 
 const multaLeve= 2;
 const multaPesada=3.50;
-let   dias=0;
+let   dias=8;
 let   valorMaximo=0;
+let	  valor=0;
 
 
 
-	for (dias=0 ; valorMaximo<50; dias++) {
+// for (dias=0 ; valorMaximo<50; dias++) {
 		
-		valorMaximo++;
-	}
+// 	dias++;
+// }
 
 
-if (dias<=5 && valorMaximo<50) {
+if (dias<=5 && valorMaximo<=50) {
 
 	
 	valorMaximo= dias*multaLeve;
@@ -20,7 +21,7 @@ if (dias<=5 && valorMaximo<50) {
 
 }
 
-if (dias>5 && valorMaximo<50) {
+if (dias>5 && valorMaximo<=50) {
 
 	
 	valorMaximo= dias*multaPesada;
