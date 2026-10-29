@@ -1,8 +1,6 @@
 
 const prompt=require("prompt-sync")();
 
-
-
 let N1= prompt("Digite o primeiro número:");
 let N2= prompt("Digite o segundo número:");
 let N3= prompt("Digite o terceiro número:");
