@@ -84,8 +84,9 @@ while (jogando) {
     } else if (escolha === "3" && inventario.includes("moeda furada")) {
       console.log("A moeda cai sem fazer barulho. Uma corda sobe do fundo do poço, sozinha.");
       inventario.push("corda");
-      let posicaoMoeda= inventario.findIndex(item => "moeda furada")
-      inventario.splice(posicaoMoeda,1)
+      inventario.shift();
+      // // let posicaoMoeda= inventario.findIndex(item => "moeda furada")
+      // inventario.splice(posicaoMoeda,1)
       console.log("Inventário: " + inventario);
     }
   } else if (local === "ponte") {
