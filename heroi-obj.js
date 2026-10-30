@@ -30,6 +30,8 @@ const aranha={
 function tomarDano(heroi, dano){
 
     heroi.vida=heroi.vida - dano
+    let chance= Math.random()
+    
     if(heroi.vida<=0){
 
         console.log("Morreu")
@@ -37,5 +39,7 @@ function tomarDano(heroi, dano){
     }
 
 }
+
+tomarDano(heroi, aranha)
 
 
