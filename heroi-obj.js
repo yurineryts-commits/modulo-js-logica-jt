@@ -6,8 +6,8 @@ const heroi={
     veneno:0,
     critico: 0.2,
     danoCritico: 2,
-    inventario:[]
-
+    inventario:[],
+   
 }
 
 const aranha={
@@ -21,7 +21,21 @@ const aranha={
 }
 
 
-console.log(heroi.vida)
-heroi.vida=15;
-heroi=15; // Erro : TypeError: Assignment to constant variable.
-console.log(heroi.nome)
+// console.log(heroi.vida)
+// heroi.vida=15;
+// heroi=15; // Erro : TypeError: Assignment to constant variable.
+// console.log(heroi.nome);   
+
+
+function tomarDano(heroi, dano){
+
+    heroi.vida=heroi.vida - dano
+    if(heroi.vida<=0){
+
+        console.log("Morreu")
+
+    }
+
+}
+
+
