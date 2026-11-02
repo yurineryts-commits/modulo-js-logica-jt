@@ -10,14 +10,14 @@ console.log(resultado)
 if (nadador_1<nadador_2 && nadador_1<nadador_3) {
 
 
-			(resultado.push("nadador_1"));
+			(resultado.push("Ouro:nadador_1"));
 
 
 			if (nadador_2<nadador_3){
 
 
-			(resultado.push("nadador_2"));
-			(resultado.push("nadador_3"));
+			(resultado.push("Prata: nadador_2"));
+			(resultado.push("Bronze:nadador_3"));
 
 
 			}
@@ -25,8 +25,8 @@ if (nadador_1<nadador_2 && nadador_1<nadador_3) {
 
 			else{
 
-			(resultado.push("nadador_3"));
-			(resultado.push("nadador_2"));	
+			(resultado.push("Prata:nadador_3"));
+			(resultado.push("Bronze:nadador_2"));	
 
 
 			}
@@ -40,14 +40,14 @@ if (nadador_1<nadador_2 && nadador_1<nadador_3) {
 else if (nadador_2<nadador_1 && nadador_2<nadador_3 ) {
 
 
-			(resultado.push("nadador_2"));
+			(resultado.push("Ouro:nadador_2"));
 
 
 			if (nadador_1<nadador_3){
 
 
-			(resultado.push("nadador_1"));
-			(resultado.push("nadador_3"));
+			(resultado.push("Prata:nadador_1"));
+			(resultado.push("Bronze:nadador_3"));
 
 
 			}
@@ -55,8 +55,8 @@ else if (nadador_2<nadador_1 && nadador_2<nadador_3 ) {
 
 			else{
 
-			(resultado.push("nadador_3"));
-			(resultado.push("nadador_1"));	
+			(resultado.push("Prata:nadador_3"));
+			(resultado.push("Bronze:nadador_1"));	
 
 
 			}
@@ -67,21 +67,19 @@ else if (nadador_2<nadador_1 && nadador_2<nadador_3 ) {
 
 
 }
-
-
 
 
 else if (nadador_3<nadador_1 && nadador_3<nadador_2) {
 
 
-			(resultado.push("nadador_3"));
+			(resultado.push("Ouro:nadador_3"));
 
 
 			if (nadador_2<nadador_1){
 
 
-			(resultado.push("nadador_2"));
-			(resultado.push("nadador_1"));
+			(resultado.push("Prata:nadador_2"));
+			(resultado.push("Bronze:nadador_1"));
 
 
 			}
@@ -89,8 +87,8 @@ else if (nadador_3<nadador_1 && nadador_3<nadador_2) {
 
 			else{
 
-			(resultado.push("nadador_1"));
-			(resultado.push("nadador_2"));	
+			(resultado.push("Prata:nadador_1"));
+			(resultado.push("Bronze:nadador_2"));	
 
 
 			}
@@ -101,20 +99,6 @@ else if (nadador_3<nadador_1 && nadador_3<nadador_2) {
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
