@@ -1,18 +1,29 @@
 
 const triangulo={
 
+
+	// equilátero
+	
 	// lado_1:3,
 	// lado_2:3,
 	// lado_3:3,
 
 
-
+	// escaleno
 
 	lado_1:3,
 	lado_2:4,
 	lado_3:5,
 
 
+	// isósceles
+
+	// lado_1:5,
+	// lado_2:5,
+	// lado_3:8,
+
+
+	// Não forma triangulo
 
 
 	// lado_1:1,
@@ -36,7 +47,7 @@ if (triangulo.lado_3< triangulo.lado_2 +triangulo.lado_1){
 		if(triangulo.lado_1===triangulo.lado_2 && triangulo.lado_2===triangulo.lado_3){
 
 
-			console.log(" O triangauli é equilátero");
+			console.log(" O trianguli é equilátero");
 
 
 		}
@@ -45,7 +56,7 @@ if (triangulo.lado_3< triangulo.lado_2 +triangulo.lado_1){
 		else if(triangulo.lado_1=== triangulo.lado_2 || triangulo.lado_2=== triangulo.lado_3){
 
 
-			console.log(" O triangauli é Isósceles");
+			console.log(" O triangulo é isósceles");
 
 
 		}
@@ -55,7 +66,7 @@ if (triangulo.lado_3< triangulo.lado_2 +triangulo.lado_1){
 		else if(triangulo.lado_1!== triangulo.lado_2 && triangulo.lado_2 !=triangulo.lado_3){
 
 
-			console.log(" O triangauli é Escaleno");
+			console.log(" O triangulo é escaleno");
 
 
 		}
