@@ -33,7 +33,7 @@ lider=Math.max(...tabela_Pontos);
 
 // console.log("O lider é: " + times[0].A);
 
-if (pontos_A>pontos_B || pontos_A>pontos_C) {
+if (pontos_A>pontos_B && pontos_A>pontos_C) {
 
 
 console.log("O lider é: " + times[0].A);
@@ -41,7 +41,7 @@ console.log("O lider é: " + times[0].A);
 	
 }
 
-		else if(pontos_B>pontos_C || pontos_B>pontos_C){
+		else if(pontos_B>pontos_C && pontos_B>pontos_C){
 
 
 		console.log("O lider é: " + times[1].B);
@@ -49,10 +49,10 @@ console.log("O lider é: " + times[0].A);
 		}
 
 
-		else if(pontos_B>pontos_C || pontos_B>pontos_C){
+		else if(pontos_B>pontos_C && pontos_B>pontos_C){
 
 
-		console.log("O lider é: " + times[1].B);
+		console.log("O lider é: " + times[2].B);
 
 		}
 
