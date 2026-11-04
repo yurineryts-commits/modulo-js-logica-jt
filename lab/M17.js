@@ -1,6 +1,12 @@
 
 const times=[
 
+	{A:"Time A", V:3,E:1,D:1},
+	{B:"Time B", V:2,E:4,D:2},
+	{C:"Time C", V:1,E:1,D:3},	
+
+
+
 	// {A:"Time A", V:3,E:2,D:0},
 	// {B:"Time B", V:0,E:0,D:2},
 	// {C:"Time C", V:2,E:5,D:2},	
@@ -8,6 +14,11 @@ const times=[
 
 	// {A:"Time A", V:1,E:0,D:0},
 	// {B:"Time B", V:0,E:0,D:0},
+	// {C:"Time C", V:1,E:0,D:0},	
+
+
+	// {A:"Time A", V:0,E:0,D:0},
+	// {B:"Time B", V:1,E:0,D:0},
 	// {C:"Time C", V:1,E:0,D:0},	
 
 
