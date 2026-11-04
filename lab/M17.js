@@ -1,9 +1,15 @@
 
 const times=[
 
-	{A:"Time A", V:2,E:3,D:0},
-	{B:"Time B", V:3,E:0,D:2},
-	{C:"Time C", V:1,E:1,D:2},	
+	// {A:"Time A", V:3,E:2,D:0},
+	// {B:"Time B", V:0,E:0,D:2},
+	// {C:"Time C", V:2,E:5,D:2},	
+
+
+	// {A:"Time A", V:1,E:0,D:0},
+	// {B:"Time B", V:0,E:0,D:0},
+	// {C:"Time C", V:1,E:0,D:0},	
+
 
 ]
 
@@ -25,7 +31,7 @@ console.log("Pontuação C:" , pontos_C);
 
 tabela_Pontos.push(pontos_A, pontos_B, pontos_C);
 
-lider=Math.max(...tabela_Pontos);
+// lider=Math.max(...tabela_Pontos);
 
 
 // console.log("O lider é: " + times[0].A);
@@ -38,7 +44,7 @@ console.log("O lider é: " + times[0].A);
 	
 }
 
-		else if(pontos_B>pontos_C && pontos_B>pontos_C){
+		else if(pontos_B>pontos_A && pontos_B>pontos_C){
 
 
 		console.log("O lider é: " + times[1].B);
@@ -54,35 +60,64 @@ console.log("O lider é: " + times[0].A);
 		}
 
 
-		
+	
+
+		else if ((pontos_A===pontos_B && times[0].V>times[1].V) || (pontos_A===pontos_C   && times[0].V>times[2].V)){
+
+		 
+				console.log("O lider é: " + times[0].A);
+
+
+		}
+
+		 else if ((pontos_B===pontos_A && times[1].V>times[0].V ) || ( pontos_B===pontos_C &&times[1].V>times[2].V)){
+
+
+				console.log("O lider é: " + times[1].B);
+
+
+		}
+
+		else if ((pontos_C===pontos_A && times[2].V>times[0].V )|| ( pontos_C===pontos_B  && times[2].V>times[1].V)){
+
+
+				console.log("O lider é: " + times[2].C);
+
+		}
+
+		///
+
+
+		else if ((pontos_A===pontos_B && times[0].V===times[1].V) || (pontos_A===pontos_C && times[0].V===times[2].V)){
+
+		 
+				console.log("O lider é: " + times[0].A);
 
 
 
-if ((pontos_A===pontos_B || pontos_A===pontos_C) && (times[0].V>times[1].V ||times[0].V>times[2].V)){
+		}
+
+		 else if ((pontos_B===pontos_A && times[1].V===times[0].V ) || ( pontos_B===pontos_C&&times[1].V===times[2].V)){
 
 
-		console.log("O lider é: " + times[0].A);
+				console.log("O lider é: " + times[1].B);
 
+
+		}
+
+		else if ((pontos_C===pontos_A && times[2].V===times[0].V  ) || (pontos_C===pontos_B && times[2].V===times[1].V)){
+
+
+					 
+				console.log("O lider é: " + times[0].A);
 
 }
 
-	 else if ((pontos_B===pontos_A || pontos_B===pontos_C) && (times[1].V>times[0].V ||times[1].V>times[2].V)){
-
-
-			console.log("O lider é: " + times[1].B);
-
-
-	}
-
-	else if ((pontos_C===pontos_A || pontos_C===pontos_B) && (times[2].V>times[0].V ||times[2].V>times[1].V)){
-
-
-			console.log("O lider é: " + times[2].C);
 
 
 
 
-}
+
 
 
 
