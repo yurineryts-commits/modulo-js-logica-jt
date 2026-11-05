@@ -4,25 +4,34 @@ const pontos = [-2, -8];
 
 let maior= Math.max(...pontos);
 
-let segundo= Math.max(...pontos.filter(numero => numero<maior));
+let filtrados= pontos.filter(numero => numero<maior);
+
+if(filtrados.length === 0){
 
 
-let indice = pontos.indexOf(segundo);
+console.log("Não existe");	
 
-
-
-if (segundo===maior) {
-
-
-console.log("Não existe");
 
 }
 
 else{
 
+ let segundo= Math.max(...filtrados);
+ let indice = pontos.indexOf(segundo);	
  console.log(segundo);
 
 }
+
+
+// function numeros(numeros) {
+	
+// 	return numeros=pontos;
+// }
+
+// if (pontos.every(numeros)===true) {
+
+
+// }
 
 
 
